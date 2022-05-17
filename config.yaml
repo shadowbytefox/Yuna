@@ -1,0 +1,22 @@
+services:
+  Yuna Platform:
+    webserver:
+      port: 8080
+      aes-secret: CHANGE_ME
+      jws-secret: CHANGE_ME
+      password-seed: CHANGE_ME
+      profile-db:
+        dbtype: postgresql
+        host: CHANGE_ME
+        dbname: CHANGE_ME
+        user: CHANGE_ME
+        password: CHANGE_ME
+    logging:
+      log-level: info
+      log-encoder: pattern
+    tracing:
+      tracing-enabled: false
+    metrics:
+      metrics-ip: 0.0.0.0
+      metrics-port: 9201
+      metrics-jvm: false
